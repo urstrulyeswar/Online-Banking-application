@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+    url(Images/Image2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  width: 85%;
+  margin: 0;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.logo {
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 1.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.create {
+  width: 100%;
+}
+.create h1 {
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 4%;
+}
+.createUser {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 700px;
+  align-items: center;
+  margin: 2% auto;
+  padding: 50px 0 50px 50px;
+  border: 2px solid white;
+}
+.userimg img {
+  width: 250px;
+  height: 250px;
+}
+.userdata form {
+  margin: 0 50px;
+}
+.userdata form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 7px 0;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+}
+.userdata form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+  background: linear-gradient(to right, transparent 50%, #009688 50%);
+  background-size: 200%;
+  background-position: left;
+  border: 2px solid white;
+  color: white;
+  transition: 0.3s;
+}
+.userdata form button:hover {
+  background-position: right;
+}
+@media only screen and (max-width: 700px) {
+  .createUser {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 700px;
+    align-items: center;
+    margin: 0% auto;
+    padding: 0px 0 0px 0px;
+    border: 0px solid white;
+  }
+  .userimg {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .userimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .userdata form {
+    margin: 0 3%;
+  }
+  .userdata form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 7px 0;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+  }
+}
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+.popup {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border: radius 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}

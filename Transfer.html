@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="CSS/transfer.css" />
+    <link rel="icon" href="Images/bank.png">
+  </head>
+  
+    <div class="container">
+      <div class="navbar">
+        <img src="Images/logo.png" height="150px" width="250px" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="#">privacy</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <br /><br /><br /><br />
+      <div class="cover"></div>
+
+      <h1>TRANSFER &nbsp; MONEY</h1>
+      <div class="all_users" style="height: 500px">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>BALANCE</th>
+            <th>OPERATION</th>
+          </tr>
+
+          <tr>
+            <td><input type="number" value="id" /></td>
+            <td><input type="text" value=" name" /></td>
+            <td><input type="email" value=" email" /></td>
+            <td><input type="number" value="amount" /></td>
+            <td id="transfer">
+              <button type="button" onclick="openpopup()">TRANSFER</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="popup" id ="popup">
+        <img src="Images/tick.png" alt="">
+        <h2>Thank you!</h2>
+        <p>  Money sent successfully.</p>
+        <button type="button" onclick="closepopup()">Ok</button>
+      </div>
+     
+  </div>
+
+
+
+    </div>
+  </body>
+  <script>
+  
+    let popup = document.getElementById("popup");
+    function openpopup()
+    {
+      popup.classList.add("open-popup");
+    }
+    function closepopup()
+    {
+      popup.classList.remove("open-popup");
+    }
+  
+  
+  </script>
+</html>

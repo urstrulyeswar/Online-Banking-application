@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+    url(Images/Image2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.logo {
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 1.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.image_placeholder1 {
+  background-color: white;
+  padding: 60px;
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  font-family: "Gabriola";
+  font-size: 2vw;
+}
+.one {
+  margin: 0;
+  font-family: "Gabriola";
+  font-size: 10vw;
+  color: black;
+  padding: 50px;
+}
+.new_acc {
+  color: black;
+  font-family: "Gabriola";
+  font-size: 2vw;
+}
+
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+.popup {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border: radius 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}

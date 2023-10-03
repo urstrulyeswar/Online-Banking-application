@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/loginstyle.css" />
+    <link rel="icon" href="Images/bank.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="content">
+        <h1>Welcome to QB Foundation Bank</h1>
+      </div>
+      <div class="form login">
+        <div class="navbar">
+          <h1>Welcome to QB foundation bank</h1>
+        </div>
+        <div class="form-content">
+          <header>Login</header>
+          <form action="#">
+            <div class="field input-feild">
+              <input type="Username" placeholder="Username" class="input" />
+            </div>
+
+            <div class="field input-feild">
+              <input
+                type="password"
+                placeholder="password"
+                class="input"
+                id="myInput"
+              />
+              <i
+                id="hide1"
+                class="bx bx-hide eye-icon"
+                onclick="myFunction()"
+              ></i>
+            </div>
+
+            <div class="form-link">
+              <a href="#" class="forgot-pass">Forgot password ?</a>
+            </div>
+
+            <div class="field button-feild">
+              <a href="services.html"><button type="button">Login</button></a>
+              <a href="signup.html"><button type="button">SignUp</button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- java Script-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        var y = document.getElementById("hide1");
+        if (x.type === "password") {
+          x.type = "text";
+          y.style.display = "block";
+        } else {
+          x.type = "password";
+          y.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

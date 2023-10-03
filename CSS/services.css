@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+    url(Images/Image2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -200;
+  color: white;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0;
+  top: 0;
+  left: 0%;
+  padding: 35px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.logo {
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 1.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/* home page mobile view */
+@media only screen and (max-width: 700px) {
+  .container {
+    text-align: left;
+  }
+  .welcome {
+    margin-top: 40px;
+    padding: 0 6%;
+  }
+  .welcome h3 {
+    font-size: 20px;
+  }
+  .welcome h1 {
+    font-size: 30px;
+  }
+}
+.allbtns {
+  max-width: 400px;
+  margin: 70px auto 0;
+}
+.allbtns a {
+  text-decoration: none;
+}
+.allbtns a button {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  transition: 0.3s;
+  background: linear-gradient(to right, transparent 50%, #009688 50%);
+  background-size: 200%;
+  background-position: left;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.allbtns a button:hover {
+  box-shadow: 0px 0px 3px 1px white;
+  background-position: right;
+}
+.allbtns a button i {
+  float: left;
+}
+
+@media only screen and (max-width: 700px) {
+  .allbtns {
+    margin: 40px auto 0;
+  }
+}

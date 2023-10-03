@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Deposit</title>
+    <link rel="stylesheet" href="CSS/deposite.css" />
+    <link rel="icon" href="Images/bank.png">
+  </head>
+ 
+  <body>
+    <div id="dashboard" class="container">
+      <div class="navbar">
+        <img src="Images/logo.png" height="150px" width="250px" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="#">privacy</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+     
+          
+        <div class="image_placeholder1">
+          <center><h2 class="new_acc">DEPOSIT</h2>
+            </center>
+          <form action="#">
+            <table>
+              <tr><td>ACCOUNT NO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Account No" /></td></tr>
+              
+              <td></td>
+              
+              <tr><td>USERNAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Username" /></td></tr>
+             <td></td>
+          <tr><td>PASSWORD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Password" /></td></tr>
+              
+         <tr><td>AMOUNT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Amount" /></td></tr>
+              <td></td>
+              <tr><td><center><button  type="submit" onclick="openpopup()">Submit<i class="fa fa-paper-plane"</center></td></tr>
+              <td></td>
+          </form>
+            <table>
+            </div>
+            <div class="popup" id ="popup">
+              <img src="Images/tick.png" alt="">
+              <h2>Thank you!</h2>
+              <p>  Money deposited successfully.</p>
+              <button type="button" onclick="closepopup()">Ok</button>
+            </div>
+          
+    </div>
+
+    
+  </body>
+  <script>
+  
+    let popup = document.getElementById("popup");
+    function openpopup()
+    {
+      popup.classList.add("open-popup");
+    }
+    function closepopup()
+    {
+      popup.classList.remove("open-popup");
+    }
+  
+  
+  </script>
+</html>
